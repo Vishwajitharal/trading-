@@ -643,16 +643,20 @@ iframe {
     height: 42px;
     border: 0;
     background: transparent;
-    display: grid;
-    place-items: center;
-    gap: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     cursor: pointer;
   }
 
   .menu-toggle span {
+    display: block;
     width: 24px;
     height: 2px;
     background: #222;
+    border-radius: 999px;
   }
 
   .mobile-panel {
@@ -697,8 +701,79 @@ iframe {
     padding: 34px 0;
   }
 
+  .hero {
+    padding-top: 18px;
+    padding-bottom: 38px;
+  }
+
+  .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+  .offer-card h2 {
+    max-width: 365px;
+    margin: 0 auto 10px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+
+  .offer-card .stars {
+    margin: 8px 0 14px;
+  }
+
+  .offer-card p {
+    margin: 0 0 16px;
+    font-size: 14px;
+  }
+
   .countdown {
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    margin: 20px 2px 52px;
+  }
+
+  .countdown div {
+    border-color: #cfe0ff;
+    box-shadow: none;
+  }
+
+  .countdown strong {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .countdown span {
+    font-size: 7px;
+    font-weight: 400;
+  }
+
+  .offer-card h3 {
+    margin: 0 0 10px;
+    font-size: 29px;
+    font-weight: 400;
+  }
+
+  .old-price {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .new-price {
+    margin: 2px 0 50px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .whatsapp {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 0 17px;
+    min-width: 114px;
+    padding: 6px 8px;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .attribute-grid,
